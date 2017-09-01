@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Kamil Domurat - Portfolio Website</title>
+      <link type="text/css" rel="stylesheet" href="_css/normalize.css" />
+      <link type="text/css" rel="stylesheet" href="_css/styles.css" />
+  </head>
+    <body>
+        <header role="banner">
+            <section class="navigation">
+                <h1>Kamil Domurat - Frontend Development</h1>
+                <nav role="navigation">
+                    <a href="#home">home</a>
+                    <a href="#aboutme">about me</a>
+                    <a href="#portfolio">portfolio</a>
+                    <a href="#contact">contact</a>
+                </nav>
+            </section>
+        </header>
+        <main role="main">
+          <div class="wrap" id="home">
+            <p class="intro">Hi there! My name is <span class="name line-1 anim-typewriter">Kamil Domurat</span><br />
+            I try my best to design and build websites that reflect your purpose. <br />
+                <br />
+            Learn more <a href="#aboutme"><button id="btn" class="btn btn-about">about me</button></a>
+            </p>
+          </div>
+          <div class="wrap" id="aboutme">
+              <h2>About me</h2>
+              <hr>
+                  <p class="about">
+                        I started Frontend Development as a hobby. Every now and then I would learn something new and try it. After some time I realized that I was spending quite a lot of time on learning HTML, CSS and JavaScript through websites suchas FreeCodeCamp, Lynda, Udemy etc. This was when I decided that I could actually use my knowledge to earn money and start a career in web development. <br />
+                        I am a rather creative person so designing websites and then building them has not been a problem for me. Although I sometimes struggle to get a particular outcome, I never give up and try to find a solution using available resources.
+                        <br />
+                        <a href="#portfolio"><button class="btn btn-portfolio">portfolio</button></a>
+                        <section class="logos">
+                          <p>Technologies I use</p>
+                          <img src="_img/html-logo.png" class="html-logo">
+                          <img src="_img/css-logo.png" class="css-logo">
+                          <img src="_img/js-logo.png" class="js-logo">
+                          <img src="_img/rwd-logo.png" class="rwd-logo">
+                          <img src="_img/bootstrap-logo.png" class="bootstrap-logo">
+                          <img src="_img/jquery-logo.png" class="jquery-logo">
+                        </section>
+                  </p>
+            </div>
+          <div class="wrap" id="portfolio">
+              <h2>Portfolio</h2>
+              <hr>
+          </div>
+          <div class="wrap" id="contact">
+            <h2>Contact</h2>
+            <hr>
+            <p class="contact-info">Did you like my work and want to talk to me? Please don't hesitate to reach out to me if you have any questions. </p>
+              <form class="contact-form">
+                <label class="label">First Name:</label><br /><input type="text" placeholder="First Name"> <br />
+                <label class="label">Last Name:</label><br /><input type="text" placeholder="Last Name"><br />
+                <label class="label">Email:</label><br /><input type="email" placeholder="Email"><br />
+                <label class="label">Mobile:</label><br /><input type="tel" placeholder="Mobile"><br />
+                <label class="label">Message:</label><br /><textarea id="message">Please type in your message.</textarea></br>
+                <button type="reset" id="reset">Reset</button>
+                <button type="submit" id="send">Send</button>
+              </form>
+          </div>
+        </main>
+        <footer role="contentinfo">
+            <p>2017 &copy; Copyright. Created &amp; designed by Kamil Domurat</p>
+        </footer>
+        <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="_js/app.js"></script>
+    </body>
+</html>

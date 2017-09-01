@@ -1,0 +1,342 @@
+﻿/* Color palette
+
+    #232323 - dark gray
+    #f44242 - red
+    #f41818 - vivid red
+    #16f71d - vivid green
+    #53fc58 - green
+    #f4be50 - orange
+------------------------------------*/
+
+/* Global styles
+------------------------------------*/
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Century Gothic', 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    color: #FFF;
+    outline: none;
+}
+
+  * a {
+    text-decoration: none;
+  }
+
+.wrap {
+    height: 100vh;
+    margin-top: 0px;
+    padding-top: 60px;
+    width: 100%;
+}
+
+h2 {
+    color: #f4be50;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+hr {
+  width: 40%;
+}
+
+
+/* Header
+------------------------------------*/
+
+header {
+    background-color: #232323;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+h1 {
+    display: inline-block;
+}
+
+/* navigation */
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+nav a {
+  width: 100px;
+  height: 40px;
+  line-height: 45px;
+  border-bottom: 4px solid #FFF;
+  padding-left: 10px;
+  color: #FFF;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: .3s all linear;
+  -moz-transition: .3s all linear;
+  -o-transition: .3s all linear;
+  transition: .3s all linear;
+}
+nav a:hover {
+  border-bottom: 40px solid #FFF;
+  color: #000;
+  height: 9px;
+}
+
+.navigation {
+    height: 90px;
+    padding: 20px;
+    width: 100%;
+}
+
+.navigation h1 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* Main
+------------------------------------*/
+
+main {
+    background-image: url(../_img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* introduction */
+
+#home {
+    padding-top: 200px;
+}
+
+.intro {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+.name {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    top: 50%;
+    width: 8em;
+    margin: 50px auto;
+    margin-bottom: 0px;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.btn-about {
+    position: absolute;
+    right: 695px;
+}
+
+/* animation */
+.anim-typewriter {
+    animation: typewriter 2s steps(22) 1s 1 normal both, blinkTextCursor 500ms steps(22) infinite normal;
+    -moz-animation: typewriter 2s steps(22) 1s 1 normal both, blinkTextCursor 500ms steps(22) infinite normal;
+    -webkit-animation: typewriter 2s steps(22) 1s 1 normal both, blinkTextCursor 500ms steps(22) infinite normal;
+    -o-animation: typewriter 2s steps(22) 1s 1 normal both, blinkTextCursor 500ms steps(22) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 8em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255,255,255,.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #FFF;
+    display: block;
+    font-size: 1.2rem;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: ease-in-out 0.2s;
+}
+
+    .btn:hover {
+        background-color: #FFF;
+        border: 1px solid #000;
+        color: #000;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+    }
+
+/* about me */
+
+#aboutme {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+        position: relative;
+}
+
+.about {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.btn-portfolio {
+    position: absolute;
+    right: 690px;
+    bottom: 300px;
+}
+
+      /* skills-logos */
+      .logos {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+      }
+        .logos p {
+          font-size: 1.3rem;
+          margin-bottom: 40px;
+        }
+        .logos img {
+          height: 100px;
+          margin-right: 50px;
+          opacity: .8;
+        }
+
+/* portfolio */
+
+#portfolio {
+  text-align: center;
+}
+
+
+
+
+/* contact */
+.contact-info {
+    display: inline-block;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#contact {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.contact-form {
+    margin-right: 0 auto;
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+}
+
+
+input, textarea{
+  color: #232323;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+}
+
+textarea {
+  color: gray;
+}
+
+textarea:focus{
+  color: #000;
+}
+
+
+
+.label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+#reset {
+  background-color: #f44242;
+  border: none;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  height: 40px;
+  width: 49%;
+}
+    #reset:hover {
+      background-color: #f41818;
+      cursor: pointer;
+    }
+
+#send {
+  background-color: #53fc58;
+  border: none;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  float: right;
+  height: 40px;
+  width: 49%;
+}
+    #send:hover {
+      background-color: #16f71d;
+      cursor: pointer;
+    }
+
+/* Footer
+------------------------------------*/
+
+footer {
+    background-color: #232323;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    height: 5vh;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
